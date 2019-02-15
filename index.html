@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blueprint: Zoom Slider</title>
+	<meta name="description" content="A simple content slider with depth-like zoom functionality" />
+	<meta name="keywords" content="blueprint, template, slider, zoom, javascript, depth, 3d, css" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="icon.png">
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<span>#AboutWhales <span class="bp-icon bp-icon-about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+			<h1>Whale Conservation</h1>
+			<nav>
+				<a href="http://tympanus.net/Blueprints/FilterableProductGrid/" class="bp-icon bp-icon-prev" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+				<!--a href="" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+				<a href="http://tympanus.net/codrops/?p=24330" class="bp-icon bp-icon-drop" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+				<a href="http://tympanus.net/codrops/category/blueprints/" class="bp-icon bp-icon-archive" data-info="Blueprints archive"><span>Go to the archive</span></a>
+			</nav>
+		</header>
+		<!-- Grid -->
+		<section class="slider">
+			<div class="slide slide--current" data-content="content-1">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/b.jpg" alt="iPhone" />
+						<div class="preview">
+							<img src="images/b.jpg" alt="iPhone app preview" />
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>facts</span> Why they matter</h2>
+			</div>
+			<div class="slide" data-content="content-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/b2.jpg" alt="iPad Mini" />
+						<div class="preview">
+							<img src="images/b2.jpg" alt="iPad Mini app preview" />
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>caracteristics</span> Bowhead Whale</h2>
+			</div>
+			<div class="slide" data-content="content-3">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/echoue.jpg" alt="MacBook" />
+						<div class="preview">
+							<img src="images/echoue.jpg" alt="MacBook app preview" />
+							<div class="zoomer__area zoomer__area--size-3"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Be Aware</span> Threats</h2>
+			</div>
+			<div class="slide" data-content="content-4">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/groupe.jpg" alt="iMac" />
+						<div class="preview">
+							<img src="images/groupe.jpg" alt="iMac app preview" />
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Whale Sharks</span> The Largest Fish</h2>
+			</div>
+			<div class="slide" data-content="content-5">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/canada.jpg" alt="Apple Watch" />
+						<div class="preview rounded">
+							<img src="images/canada.jpg" alt="Apple Watch app preview" />
+							<div class="zoomer__area zoomer__area--size-1"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Whales are Amazing</span> Help them</h2>
+			</div>
+			<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
+				<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
+				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next product</span></button>
+			</nav>
+		</section>
+		<!-- /slider-->
+		<section class="content">
+			<div class="content__item" id="content-1">
+				<img class="content__item-img rounded-right" src="images/baba.jpg" alt="Whale Content" />
+				<div class="content__item-inner">
+					<h2>Why They Matter</h2>
+					<h3>LEARN MORE</h3>
+					<p>Whales are at the top of the food chain and have an important role in the overall health of the marine environment. Unfortunately their large size and mythical aura does not protect them; six out of the 13 great whale species are classified as endangered, even after decades of protection.</p>
+					<p><a href="https://www.worldwildlife.org/species/whale/">Learn more about the underwater life of the whale &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+				<img class="content__item-img rounded-right" src="images/duo.jpg" alt="Bowhead Whale" />
+				<div class="content__item-inner">
+					<h2>Bowhead Whale</h2>
+					<h3>POPULATION : Approximately 10,000</h3>
+					<p>This predominantly Arctic species is associated with ice floes. Its movement patterns are therefore influenced by the melting and freezing of the ice.
+
+Bowhead whales are capable of breaking through sea ice at least seven inches thick with their large skulls and powerful bodies.
+
+Adult bowheads are entirely black except the front part of the lower jaw which is white and prominently upturned. They can grow up to 60 feet long while still being able to leap entirely out of water. Bowheads filter their food through baleen by opening their mouths and straining plankton from the surface, the water column, or the sea floor.
+
+Data has shown that bowhead whales may be among the longest-lived animals on earth. Based on the recovery of stone harpoon tips in their blubber, and from analysis of eye tissue, scientists believe that the life-span of bowhead whales can be over 200 years.</p>
+					<p><a href="https://www.worldwildlife.org/species/bowhead-whale">Learn more about Bowhead Whale &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-3">
+				<img class="content__item-img rounded-right" src="images/bat.jpg" alt="Threats Content" />
+				<div class="content__item-inner">
+					<h2>Be Aware</h2>
+					<h3>Bad Treatment</h3>
+					<p>While the sei whale has been hunted by humans since the 1860s, it wasn't until the 1950s and 1960s and the declining availability of blue and fin whales that the killings seriously expanded.
+
+Since 1986, the International Whaling Commission (IWC) has officially halted all commercial whaling. However, 50 sei whales are killed annually by Japanese whalers in the North Pacific under Japan's "scientific" whaling program.
+
+Whales are threatened by climate change and can also be harmed by pollution, shipping strikes and entanglement in fishing gear.</p>
+					<p><a href="http://wwf.panda.org/knowledge_hub/endangered_species/cetaceans/threats/whaling/">Get informed about the various issues &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-4">
+				<img class="content__item-img rounded-right" src="images/beauty.jpg" alt="whale sharks Content" />
+				<div class="content__item-inner">
+					<h2> <span>Whale</span> Sharks</h2>
+					<h3>Did you know about them?</h3>
+					<p>Whale sharks (Rhincodon typus) are the largest shark, and indeed largest of any fishes alive today. They feed on plankton and travel large distances to find enough food to sustain their huge size, and to reproduce. Whale sharks are found in all the tropical oceans of the world. Their white spotted colouration makes these gentle giants easy to distinguish, and popular with snorkelers and divers at sites where they aggregate off the coast.
+
+The maximum size of whale sharks is not known, but could be as large as 20m. Females give birth to live young but this has never been observed. Where pupping occurs and where the youngest animals situate remains a mystery, as they are very rarely found. Adults are often found feeding at the surface, but may dive to 1000m. Whale sharks are protected from fishing in many countries these days, but are in decline in some areas.</p>
+					<p><a href="https://www.worldwildlife.org/species/whale-shark">Learn more about them &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-5">
+				<img class="content__item-img rounded-right" src="images/sky.jpg" alt="Apple Watch Content" />
+				<div class="content__item-inner">
+					<h2>Why wales are Amazing</h2>
+					<h3>Whales need your help to make a difference in their environment</h3>
+					<p>Whales are beautiful animals, they’re elegant and strong. Whales are gentle creatures that need protecting. Whales have a big heart, literally and figuratively. They have been known to adopt dolphins when they are abandoned from their own pods. Belugas, Humpbacks and Bowhead whales are three of the most interesting whales. </p>
+					<p><a href="https://www.youtube.com/watch?v=o767PuYbEXg">Discover a beautiful video of whales dancing &xrarr;</a></p>
+				</div>
+			</div>
+			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
+		</section>
+	</div>
+	<script src="js/classie.js"></script>
+	<script src="js/dynamics.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
